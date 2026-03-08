@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes – Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/settings.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-logo">
+            <img src="./Images/LOGO.png" alt="Loving Homes Logo">
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="./index.html">HOME</a>
+            <a href="./services.html">Services</a>
+            <a href="./packages.html">Packages</a>
+            <a href="./ai.html">AI</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </nav>
+        <a href="./settings.html" class="menu-btn active-settings" aria-label="Settings">
+            <img src="./Images/menu.png" alt="Menu">
+        </a>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <div class="settings-hero">
+        <div class="settings-hero-icon">⚙️</div>
+        <h1>Settings</h1>
+        <p>Manage your account and preferences.</p>
+    </div>
+
+    <!-- ========== SETTINGS CONTENT ========== -->
+    <section class="settings-section">
+
+        <!-- Profile Card -->
+        <div class="settings-card">
+            <div class="card-header">
+                <span class="card-icon">👤</span>
+                <h2>Profile Information</h2>
+            </div>
+            <div class="settings-form">
+                <div class="settings-row">
+                    <div class="settings-group">
+                        <label>Username</label>
+                        <input type="text" id="username" placeholder="e.g. John Smith">
+                    </div>
+                    <div class="settings-group">
+                        <label>Display Name</label>
+                        <input type="text" id="displayName" placeholder="e.g. John">
+                    </div>
+                </div>
+                <div class="settings-group">
+                    <label>Email Address</label>
+                    <input type="email" id="settingsEmail" placeholder="e.g. john@email.com">
+                </div>
+                <div class="settings-group">
+                    <label>Phone Number <span class="field-note">(1XXXXXXXXXX)</span></label>
+                    <input type="tel" id="settingsPhone" placeholder="e.g. 13812345678">
+                </div>
+                <div class="settings-group">
+                    <label>Location</label>
+                    <input type="text" id="settingsLocation" value="Hong Kong, China" readonly class="readonly-input">
+                </div>
+                <button class="btn-save" onclick="saveProfile()">Save Changes ✓</button>
+                <div class="save-msg" id="saveMsg">✅ Profile saved successfully!</div>
+            </div>
+        </div>
+
+        <!-- Preferences Card -->
+        <div class="settings-card">
+            <div class="card-header">
+                <span class="card-icon">🔔</span>
+                <h2>Preferences</h2>
+            </div>
+            <div class="pref-list">
+                <div class="pref-item">
+                    <div class="pref-info">
+                        <span class="pref-label">Email Notifications</span>
+                        <span class="pref-desc">Receive updates about your bookings</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" id="emailNotif" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="pref-item">
+                    <div class="pref-info">
+                        <span class="pref-label">Daily Photo Updates</span>
+                        <span class="pref-desc">Get photos of your dog during their stay</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" id="photoNotif" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="pref-item">
+                    <div class="pref-info">
+                        <span class="pref-label">Promotional Offers</span>
+                        <span class="pref-desc">Receive special deals and discounts</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" id="promoNotif">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <p>© 2026 Loving Homes — All Rights Reserved</p>
+        <p class="footer-sub">Made with ❤️ for dogs everywhere</p>
+    </footer>
+
+    <script src="./javascript/settings.js"></script>
+</body>
+</html>

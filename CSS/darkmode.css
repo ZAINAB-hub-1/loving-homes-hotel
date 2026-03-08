@@ -1,0 +1,162 @@
+/* ============================================
+   LOVING HOMES — darkmode.css  (v3)
+   Add <link rel="stylesheet" href="../CSS/darkmode.css"> to ALL pages
+   ============================================ */
+
+html.dark {
+    --white:   #1e1e2e;
+    --light:   #16161e;
+    --dark:    #f0f0f0;
+    --gray:    #a0a0b0;
+    --border:  #2e2e3e;
+    --shadow:  0 8px 32px rgba(0,0,0,.4);
+}
+
+/* ── Body & backgrounds ── */
+html.dark body {
+    background: #16161e;
+    color: #f0f0f0;
+}
+
+/* ── Navbar ── */
+html.dark .navbar {
+    background: rgba(22, 22, 30, 0.97);
+    border-bottom-color: #2e2e3e;
+    box-shadow: 0 2px 16px rgba(0,0,0,.4);
+}
+html.dark .nav-links a { color: #e0e0e0; }
+html.dark .menu-btn:hover { background: #2e2e3e; }
+
+/* ── Cards & panels ── */
+html.dark .settings-card,
+html.dark .info-card,
+html.dark .service-card,
+html.dark .package-card,
+html.dark .blog-card,
+html.dark .post-card,
+html.dark .team-card,
+html.dark .value-card,
+html.dark .trust-card,
+html.dark .review-card,
+html.dark .testimonial-card,
+html.dark .form-wrap,
+html.dark .chat-container,
+html.dark .ai-card {
+    background: #1e1e2e;
+    border-color: #2e2e3e;
+}
+
+/* ── Card headers ── */
+html.dark .card-header {
+    background: #13131a;
+    border-bottom-color: #2e2e3e;
+}
+
+/* ── Inputs & selects ── */
+html.dark input,
+html.dark select,
+html.dark textarea {
+    background: #13131a;
+    border-color: #2e2e3e;
+    color: #f0f0f0;
+}
+html.dark input:focus,
+html.dark select:focus,
+html.dark textarea:focus {
+    background: #1e1e2e;
+    border-color: #FF6B35;
+}
+html.dark .readonly-input {
+    background: #0f0f18 !important;
+    color: #6b6b80 !important;
+}
+
+/* ── Preference & pref items ── */
+html.dark .pref-item,
+html.dark .account-item {
+    border-bottom-color: #2e2e3e;
+}
+html.dark .pref-label { color: #e0e0e0; }
+html.dark .pref-desc  { color: #7070a0; }
+
+/* ── Settings hero ── */
+html.dark .settings-hero {
+    background: linear-gradient(135deg, #0d0d18 0%, #1a1a2e 100%);
+}
+
+/* ── Hero sections ── */
+html.dark .contact-hero,
+html.dark .page-hero {
+    filter: brightness(0.85);
+}
+
+/* ── Sections with light bg ── */
+html.dark .services-section,
+html.dark .packages-section,
+html.dark .about-section,
+html.dark .contact-section,
+html.dark .settings-section,
+html.dark .blog-section,
+html.dark .ai-section {
+    background: #16161e;
+}
+
+/* ── Stats bar ── */
+html.dark .stats-bar { background: #13131a; }
+html.dark .stat-num  { color: #FF6B35; }
+
+/* ── Blog ── */
+html.dark .blog-hero    { filter: brightness(.7); }
+html.dark .post-meta    { color: #7070a0; }
+html.dark .post-excerpt { color: #a0a0b0; }
+
+/* ── Modal ── */
+html.dark .modal-box,
+html.dark .pay-modal {
+    background: #1e1e2e;
+    border-color: #2e2e3e;
+}
+html.dark .modal-overlay,
+html.dark .pay-overlay {
+    background: rgba(0,0,0,.75);
+}
+
+/* ── Chat window ── */
+html.dark .chat-window { background: #13131a; }
+html.dark .msg-bubble.bot-bubble,
+html.dark .message.bot .msg-bubble {
+    background: #2e2e3e;
+    color: #e0e0e0;
+}
+html.dark .chat-input {
+    background: #13131a;
+    border-color: #2e2e3e;
+    color: #f0f0f0;
+}
+
+/* ── Tables ── */
+html.dark table { background: #1e1e2e; }
+html.dark th { background: #13131a; color: #e0e0e0; border-color: #2e2e3e; }
+html.dark td { border-color: #2e2e3e; color: #d0d0d0; }
+html.dark tr:hover td { background: #252535; }
+
+/* ── Footer ── */
+html.dark .footer { background: #0d0d18; }
+
+/* ── Misc text ── */
+html.dark h1, html.dark h2, html.dark h3 { color: #f0f0f0; }
+html.dark p  { color: #c0c0d0; }
+html.dark label { color: #d0d0e0; }
+
+/* ── Scrollbar ── */
+html.dark ::-webkit-scrollbar { width: 8px; }
+html.dark ::-webkit-scrollbar-track { background: #16161e; }
+html.dark ::-webkit-scrollbar-thumb { background: #3e3e5e; border-radius: 4px; }
+html.dark ::-webkit-scrollbar-thumb:hover { background: #FF6B35; }
+
+/* ── Smooth transition ── */
+body, .navbar, .settings-card, .info-card, .service-card,
+.package-card, .blog-card, .form-wrap, input, select, textarea,
+.chat-window, .modal-box, table, th, td {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
