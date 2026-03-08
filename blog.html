@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes – Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/blog.css">
+    <link rel="stylesheet" href="./CSS/darkmode.css">
+    <script src="./javascript/darkmode.js"></script>
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-logo">
+            <img src="./Images/LOGO.png" alt="Loving Homes Logo">
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html"    data-en="HOME"       data-zh="首页">HOME</a>
+            <a href="services.html" data-en="Services"   data-zh="服务">Services</a>
+            <a href="packages.html" data-en="Packages"   data-zh="套餐">Packages</a>
+            <a href="ai.html"       data-en="AI"         data-zh="AI">AI</a>
+            <a href="blog.html"     data-en="Blog"       data-zh="博客" class="active">Blog</a>
+            <a href="about.html"    data-en="About Us"   data-zh="关于我们">About Us</a>
+            <a href="contact.html"  data-en="Contact Us" data-zh="联系我们">Contact Us</a>
+        </nav>
+        <a href="settings.html" class="menu-btn" aria-label="Settings">
+            <img src="./Images/menu.png" alt="Menu">
+        </a>
+    </header>
+
+    <!-- HERO -->
+    <div class="blog-hero">
+        <div class="blog-hero-content">
+            <span class="hero-tag" data-en="🐾 Tips, Stories & Updates" data-zh="🐾 技巧、故事与资讯">🐾 Tips, Stories & Updates</span>
+            <h1 data-en="The Loving Homes <span>Blog</span>" data-zh="温馨之家<span>博客</span>">The Loving Homes <span>Blog</span></h1>
+            <p data-en="Everything you need to know about caring for your dog — from expert tips to the latest news from our hotel."
+               data-zh="关于狗狗护理您需要知道的一切——从专家建议到我们旅馆的最新动态。">Everything you need to know about caring for your dog — from expert tips to the latest news from our hotel.</p>
+        </div>
+        <div class="paw-bg">🐾</div>
+    </div>
+
+    <!-- FEATURED POST -->
+    <section class="featured-section">
+        <div class="featured-card" id="featuredCard">
+            <div class="featured-img">
+                <div class="featured-emoji">🐕</div>
+            </div>
+            <div class="featured-content">
+                <span class="post-tag orange" data-en="⭐ Featured" data-zh="⭐ 精选">⭐ Featured</span>
+                <h2 data-en="10 Signs Your Dog is Happy and Healthy"
+                    data-zh="10个迹象表明您的狗狗快乐又健康">10 Signs Your Dog is Happy and Healthy</h2>
+                <p data-en="Understanding your dog's body language is key to knowing if they're truly thriving. From a wagging tail to bright eyes — here's what to look for."
+                   data-zh="了解您的狗狗的肢体语言是判断它是否真正健康的关键。从摇摆的尾巴到明亮的眼睛——这里是您需要关注的信号。">Understanding your dog's body language is key to knowing if they're truly thriving. From a wagging tail to bright eyes — here's what to look for.</p>
+                <div class="post-meta">
+                    <span>📅 March 2026</span>
+                    <span>⏱️ <span data-en="5 min read" data-zh="5分钟阅读">5 min read</span></span>
+                </div>
+                <button class="btn-read" onclick="openPost('featured')"
+                        data-en="Read Article →" data-zh="阅读文章 →">Read Article →</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="posts-grid" id="postsGrid">
+
+            <!-- Post 1 -->
+            <div class="post-card" data-cat="tips">
+                <div class="post-emoji-wrap" style="background:#fff3ee">🛁</div>
+                <div class="post-body">
+                    <span class="post-tag orange" data-en="🐾 Care Tips" data-zh="🐾 护理技巧">🐾 Care Tips</span>
+                    <h3 data-en="How Often Should You Bathe Your Dog?"
+                        data-zh="您应该多久给狗狗洗一次澡？">How Often Should You Bathe Your Dog?</h3>
+                    <p data-en="Bathing frequency depends on your dog's breed, coat type, and lifestyle. Over-bathing can strip natural oils — here's the right balance."
+                       data-zh="洗澡频率取决于您的狗狗的品种、毛发类型和生活习惯。过度洗澡会破坏天然油脂——以下是正确的平衡方法。">Bathing frequency depends on your dog's breed, coat type, and lifestyle. Over-bathing can strip natural oils — here's the right balance.</p>
+                    <div class="post-meta"><span>📅 Feb 2026</span><span>⏱️ <span data-en="3 min" data-zh="3分钟">3 min</span></span></div>
+                    <button class="btn-read-sm" onclick="openPost('bathe')"
+                            data-en="Read More →" data-zh="阅读更多 →">Read More →</button>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post-card" data-cat="news">
+                <div class="post-emoji-wrap" style="background:#e8f9fb">📢</div>
+                <div class="post-body">
+                    <span class="post-tag teal" data-en="📢 Hotel News" data-zh="📢 旅馆动态">📢 Hotel News</span>
+                    <h3 data-en="Loving Homes Opens New Outdoor Pasture!"
+                        data-zh="温馨之家开放全新户外草地！">Loving Homes Opens New Outdoor Pasture!</h3>
+                    <p data-en="We're thrilled to announce our brand-new expanded outdoor area — more space, more grass, and more fun for your furry guests!"
+                       data-zh="我们很高兴宣布全新扩建的户外区域——更多空间、更多草地，为您的毛茸茸的客人提供更多乐趣！">We're thrilled to announce our brand-new expanded outdoor area — more space, more grass, and more fun for your furry guests!</p>
+                    <div class="post-meta"><span>📅 Jan 2026</span><span>⏱️ <span data-en="2 min" data-zh="2分钟">2 min</span></span></div>
+                    <button class="btn-read-sm" onclick="openPost('pasture')"
+                            data-en="Read More →" data-zh="阅读更多 →">Read More →</button>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post-card" data-cat="nutrition">
+                <div class="post-emoji-wrap" style="background:#fff8e1">🍖</div>
+                <div class="post-body">
+                    <span class="post-tag yellow" data-en="🍖 Nutrition" data-zh="🍖 营养">🍖 Nutrition</span>
+                    <h3 data-en="The Best Foods for a Healthy Dog Coat"
+                        data-zh="让狗狗毛发亮丽的最佳食物">The Best Foods for a Healthy Dog Coat</h3>
+                    <p data-en="A shiny, healthy coat starts from the inside. Discover which foods are packed with omega-3s and essential nutrients for a beautiful coat."
+                       data-zh="光亮健康的毛发从内而外开始。了解哪些食物富含欧米伽-3和必需营养素，让毛发更美丽。">A shiny, healthy coat starts from the inside. Discover which foods are packed with omega-3s and essential nutrients for a beautiful coat.</p>
+                    <div class="post-meta"><span>📅 Jan 2026</span><span>⏱️ <span data-en="4 min" data-zh="4分钟">4 min</span></span></div>
+                    <button class="btn-read-sm" onclick="openPost('coat')"
+                            data-en="Read More →" data-zh="阅读更多 →">Read More →</button>
+                </div>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="post-card" data-cat="training">
+                <div class="post-emoji-wrap" style="background:#f0fdf4">🎓</div>
+                <div class="post-body">
+                    <span class="post-tag green" data-en="🎓 Training" data-zh="🎓 训练">🎓 Training</span>
+                    <h3 data-en="5 Basic Commands Every Dog Should Know"
+                        data-zh="每只狗狗都应该掌握的5个基本指令">5 Basic Commands Every Dog Should Know</h3>
+                    <p data-en="Sit, stay, come, down, and leave it — these five commands build the foundation for a well-behaved, happy dog. Start training today!"
+                       data-zh="坐下、等待、过来、趴下和放开——这五个指令是培养听话快乐狗狗的基础。今天就开始训练吧！">Sit, stay, come, down, and leave it — these five commands build the foundation for a well-behaved, happy dog. Start training today!</p>
+                    <div class="post-meta"><span>📅 Dec 2025</span><span>⏱️ <span data-en="4 min" data-zh="4分钟">4 min</span></span></div>
+                    <button class="btn-read-sm" onclick="openPost('commands')"
+                            data-en="Read More →" data-zh="阅读更多 →">Read More →</button>
+                </div>
+            </div>
+
+            <!-- Post 5 -->
+            <div class="post-card" data-cat="tips">
+                <div class="post-emoji-wrap" style="background:#fff3ee">🌡️</div>
+                <div class="post-body">
+                    <span class="post-tag orange" data-en="🐾 Care Tips" data-zh="🐾 护理技巧">🐾 Care Tips</span>
+                    <h3 data-en="Keeping Your Dog Cool in Summer"
+                        data-zh="夏天如何让您的狗狗保持凉爽">Keeping Your Dog Cool in Summer</h3>
+                    <p data-en="Summer heat can be dangerous for dogs. Learn the warning signs of overheating and how to keep your pup cool and safe all season."
+                       data-zh="夏季高温对狗狗来说可能很危险。了解中暑的警告信号，以及如何在整个夏季保持您的狗狗凉爽安全。">Summer heat can be dangerous for dogs. Learn the warning signs of overheating and how to keep your pup cool and safe all season.</p>
+                    <div class="post-meta"><span>📅 Dec 2025</span><span>⏱️ <span data-en="3 min" data-zh="3分钟">3 min</span></span></div>
+                    <button class="btn-read-sm" onclick="openPost('summer')"
+                            data-en="Read More →" data-zh="阅读更多 →">Read More →</button>
+                </div>
+            </div>
+
+            <!-- Post 6 -->
+            <div class="post-card" data-cat="news">
+                <div class="post-emoji-wrap" style="background:#e8f9fb">🏆</div>
+                <div class="post-body">
+                    <span class="post-tag teal" data-en="📢 Hotel News" data-zh="📢 旅馆动态">📢 Hotel News</span>
+                    <h3 data-en="We Won Best Dog Hotel 2025!"
+                        data-zh="我们荣获2025年最佳宠物旅馆！">We Won Best Dog Hotel 2025!</h3>
+                    <p data-en="We're incredibly proud to have been voted the Best Dog Hotel of 2025 by our wonderful community. Thank you to all our guests!"
+                       data-zh="我们非常自豪地被我们出色的社区评选为2025年最佳宠物旅馆。感谢所有客人！">We're incredibly proud to have been voted the Best Dog Hotel of 2025 by our wonderful community. Thank you to all our guests!</p>
+                    <div class="post-meta"><span>📅 Nov 2025</span><span>⏱️ <span data-en="2 min" data-zh="2分钟">2 min</span></span></div>
+                    <button class="btn-read-sm" onclick="openPost('award')"
+                            data-en="Read More →" data-zh="阅读更多 →">Read More →</button>
+                </div>
+            </div>
+
+            <!-- Post 7 -->
+            <div class="post-card" data-cat="nutrition">
+                <div class="post-emoji-wrap" style="background:#fff8e1">💧</div>
+                <div class="post-body">
+                    <span class="post-tag yellow" data-en="🍖 Nutrition" data-zh="🍖 营养">🍖 Nutrition</span>
+                    <h3 data-en="How Much Water Does Your Dog Need Daily?"
+                        data-zh="您的狗狗每天需要喝多少水？">How Much Water Does Your Dog Need Daily?</h3>
+                    <p data-en="Hydration is essential for your dog's health. Find out the right amount of water for your dog's size and activity level."
+                       data-zh="补水对您的狗狗健康至关重要。了解适合您的狗狗体型和活动量的正确饮水量。">Hydration is essential for your dog's health. Find out the right amount of water for your dog's size and activity level.</p>
+                    <div class="post-meta"><span>📅 Nov 2025</span><span>⏱️ <span data-en="3 min" data-zh="3分钟">3 min</span></span></div>
+                    <button class="btn-read-sm" onclick="openPost('water')"
+                            data-en="Read More →" data-zh="阅读更多 →">Read More →</button>
+                </div>
+            </div>
+
+            <!-- Post 8 -->
+            <div class="post-card" data-cat="training">
+                <div class="post-emoji-wrap" style="background:#f0fdf4">🐕‍🦺</div>
+                <div class="post-body">
+                    <span class="post-tag green" data-en="🎓 Training" data-zh="🎓 训练">🎓 Training</span>
+                    <h3 data-en="How to Reduce Separation Anxiety in Dogs"
+                        data-zh="如何减少狗狗的分离焦虑">How to Reduce Separation Anxiety in Dogs</h3>
+                    <p data-en="Does your dog get anxious when you leave? Separation anxiety is common but manageable. Here are proven strategies to help."
+                       data-zh="您的狗狗在您离开时会焦虑吗？分离焦虑很常见但可以控制。这里有经过验证的有效策略。">Does your dog get anxious when you leave? Separation anxiety is common but manageable. Here are proven strategies to help.</p>
+                    <div class="post-meta"><span>📅 Oct 2025</span><span>⏱️ <span data-en="5 min" data-zh="5分钟">5 min</span></span></div>
+                    <button class="btn-read-sm" onclick="openPost('anxiety')"
+                            data-en="Read More →" data-zh="阅读更多 →">Read More →</button>
+                </div>
+            </div>
+
+            <!-- Post 9 -->
+            <div class="post-card" data-cat="tips">
+                <div class="post-emoji-wrap" style="background:#fff3ee">✂️</div>
+                <div class="post-body">
+                    <span class="post-tag orange" data-en="🐾 Care Tips" data-zh="🐾 护理技巧">🐾 Care Tips</span>
+                    <h3 data-en="Grooming at Home: A Beginner's Guide"
+                        data-zh="居家美容：初学者指南">Grooming at Home: A Beginner's Guide</h3>
+                    <p data-en="Professional grooming is great, but regular at-home care between sessions keeps your dog looking and feeling their best every day."
+                       data-zh="专业美容很重要，但在两次专业护理之间定期进行家庭护理，能让您的狗狗每天都保持最佳状态。">Professional grooming is great, but regular at-home care between sessions keeps your dog looking and feeling their best every day.</p>
+                    <div class="post-meta"><span>📅 Oct 2025</span><span>⏱️ <span data-en="4 min" data-zh="4分钟">4 min</span></span></div>
+                    <button class="btn-read-sm" onclick="openPost('grooming')"
+                            data-en="Read More →" data-zh="阅读更多 →">Read More →</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-emoji" id="modalEmoji"></div>
+            <span class="post-tag" id="modalTag"></span>
+            <h2 id="modalTitle"></h2>
+            <div class="modal-meta" id="modalMeta"></div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p data-en="© 2026 Loving Homes — All Rights Reserved" data-zh="© 2026 温馨之家 — 版权所有">© 2026 Loving Homes — All Rights Reserved</p>
+        <p class="footer-sub" data-en="Made with ❤️ for dogs everywhere" data-zh="用 ❤️ 为世界各地的狗狗而制作">Made with ❤️ for dogs everywhere</p>
+    </footer>
+
+    <script src="./javascript/translate.js"></script>
+    <script src="./javascript/blog.js"></script>
+</body>
+</html>

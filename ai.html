@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes – AI Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/ai.css">
+    <link rel="stylesheet" href="./CSS/darkmode.css">
+    <script src="./javascript/darkmode.js"></script>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-logo">
+            <img src="./Images/LOGO.png" alt="Loving Homes Logo">
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">HOME</a>
+            <a href="services.html">Services</a>
+            <a href="packages.html">Packages</a>
+            <a href="ai.html" class="active">AI</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <a href="settings.html" class="menu-btn" aria-label="Settings">
+    <img src="./Images/menu.png" alt="Menu">
+</a>
+    </header>
+
+    <!-- ========== AI PAGE ========== -->
+    <section class="ai-section">
+        <div class="ai-header">
+            <div class="ai-avatar">🤖</div>
+            <h1>Ask Our <span>AI Assistant</span></h1>
+            <p>Ask me anything about our services, packages, or how Loving Homes can care for your dog.</p>
+        </div>
+
+        <!-- Suggested questions -->
+        <div class="suggestions">
+            <button class="suggestion-btn" onclick="askSuggestion(this)">What services do you offer?</button>
+            <button class="suggestion-btn" onclick="askSuggestion(this)">Tell me about the Premium Package</button>
+            <button class="suggestion-btn" onclick="askSuggestion(this)">Do you have 24/7 vet care?</button>
+            <button class="suggestion-btn" onclick="askSuggestion(this)">What is the Custom Package?</button>
+            <button class="suggestion-btn" onclick="askSuggestion(this)">Do you offer delivery service?</button>
+            <button class="suggestion-btn" onclick="askSuggestion(this)">Tell me about the Classic Package</button>
+        </div>
+
+        <!-- Chat window -->
+        <div class="chat-window" id="chatWindow">
+            <div class="message bot">
+                <div class="msg-avatar">🐾</div>
+                <div class="msg-bubble">
+                    Hi! I'm the Loving Homes AI assistant. I can answer questions about our <strong>services</strong> and <strong>packages</strong>. How can I help you today?
+                </div>
+            </div>
+        </div>
+
+        <!-- Input -->
+        <div class="chat-input-wrap">
+            <input
+                type="text"
+                id="chatInput"
+                class="chat-input"
+                placeholder="Ask about our services or packages..."
+                autocomplete="off"
+                maxlength="200"
+            >
+            <button class="send-btn" id="sendBtn" onclick="sendMessage()">Send ➤</button>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <p>© 2026 Loving Homes — All Rights Reserved</p>
+        <p class="footer-sub">Made with ❤️ for dogs everywhere</p>
+    </footer>
+
+    <script src="./javascript/ai.js"></script>
+</body>
+</html>                                                                                                     

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes – Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/services.css">
+    <link rel="stylesheet" href="./CSS/darkmode.css">
+    <script src="./javascript/darkmode.js"></script>
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-logo">
+            <img src="./Images/LOGO.png" alt="Loving Homes Logo">
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html"    data-en="HOME"       data-zh="首页">HOME</a>
+            <a href="services.html" data-en="Services"   data-zh="服务" class="active">Services</a>
+            <a href="packages.html" data-en="Packages"   data-zh="套餐">Packages</a>
+            <a href="ai.html"       data-en="AI"         data-zh="AI">AI</a>
+            <a href="blog.html"     data-en="Blog"       data-zh="博客">Blog</a>
+            <a href="about.html"    data-en="About Us"   data-zh="关于我们">About Us</a>
+            <a href="contact.html"  data-en="Contact Us" data-zh="联系我们">Contact Us</a>
+        </nav>
+        <a href="settings.html" class="menu-btn" aria-label="Settings">
+            <img src="./Images/menu.png" alt="Menu">
+        </a>
+    </header>
+
+    <!-- HERO BANNER -->
+    <div class="hero-banner">
+        <img src="./Images/ser.png" alt="Our Services">
+        <div class="hero-banner-overlay">
+            <div class="hero-banner-text">
+                <span class="hero-tag" data-en="🐾 What We Offer" data-zh="🐾 我们提供的服务">🐾 What We Offer</span>
+                <h1 data-en="Our <span>Services</span>" data-zh="我们的<span>服务</span>">Our <span>Services</span></h1>
+                <p data-en="Everything your dog needs — under one roof, with love."
+                   data-zh="您的狗狗所需的一切——在同一屋檐下，用爱守护。">Everything your dog needs — under one roof, with love.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES CARDS -->
+    <section class="services-section">
+        <div class="section-header">
+            <h2 data-en="Explore Our <span class='highlight'>Services</span>"
+                data-zh="探索我们的<span class='highlight'>服务</span>">Explore Our <span class="highlight">Services</span></h2>
+            <p data-en="Premium care tailored for every dog's unique needs"
+               data-zh="为每只狗狗量身定制的优质护理">Premium care tailored for every dog's unique needs</p>
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="serviceSearch"
+                       placeholder="Search services..."
+                       data-en-placeholder="Search services..."
+                       data-zh-placeholder="搜索服务..."
+                       oninput="searchServices(this.value)">
+                <button class="search-clear" id="searchClear" onclick="clearSearch()" style="display:none">✕</button>
+            </div>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-img-wrap">
+                    <img src="./Images/GROOMING.jpg" alt="Grooming">
+                    <div class="service-img-overlay"></div>
+                </div>
+                <div class="service-body">
+                    <div class="service-icon">✂️</div>
+                    <h3 data-en="Grooming Salon and Spa" data-zh="美容沙龙与水疗">Grooming Salon and Spa</h3>
+                    <p class="service-desc"
+                       data-en="Professional grooming treatments to keep your dog looking and feeling their best."
+                       data-zh="专业美容护理，让您的狗狗保持最佳状态。">Professional grooming treatments to keep your dog looking and feeling their best.</p>
+                    <button class="btn-learn-more" onclick="openModal('grooming')"
+                            data-en="Learn More →" data-zh="了解更多 →">Learn More →</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrap">
+                    <img src="./Images/room.jpg" alt="Rooms">
+                    <div class="service-img-overlay"></div>
+                </div>
+                <div class="service-body">
+                    <div class="service-icon">🛏️</div>
+                    <h3 data-en="Heated &amp; Cooled Rooms" data-zh="冷暖空调客房">Heated &amp; Cooled Rooms</h3>
+                    <p class="service-desc"
+                       data-en="Cozy rooms with underfloor heating/cooling and a personal television for your dog."
+                       data-zh="配备地暖/冷气和个人电视的舒适客房。">Cozy rooms with underfloor heating/cooling and a personal television for your dog.</p>
+                    <button class="btn-learn-more" onclick="openModal('rooms')"
+                            data-en="Learn More →" data-zh="了解更多 →">Learn More →</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrap">
+                    <img src="./Images/delivary.jpg" alt="Delivery">
+                    <div class="service-img-overlay"></div>
+                </div>
+                <div class="service-body">
+                    <div class="service-icon">🚗</div>
+                    <h3 data-en="Delivery Service" data-zh="上门接送服务">Delivery Service</h3>
+                    <p class="service-desc"
+                       data-en="Convenient pick-up and drop-off service to and from your location."
+                       data-zh="便捷的上门接送服务，直达您的位置。">Convenient pick-up and drop-off service to and from your location.</p>
+                    <button class="btn-learn-more" onclick="openModal('delivery')"
+                            data-en="Learn More →" data-zh="了解更多 →">Learn More →</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrap">
+                    <img src="./Images/SAFE.png" alt="Safe Pastures">
+                    <div class="service-img-overlay"></div>
+                </div>
+                <div class="service-body">
+                    <div class="service-icon">🌿</div>
+                    <h3 data-en="Safe Outdoor Pastures" data-zh="安全户外草地">Safe Outdoor Pastures</h3>
+                    <p class="service-desc"
+                       data-en="Secure, spacious outdoor areas where your dog can roam freely and safely."
+                       data-zh="安全宽敞的户外区域，让您的狗狗自由奔跑。">Secure, spacious outdoor areas where your dog can roam freely and safely.</p>
+                    <button class="btn-learn-more" onclick="openModal('pastures')"
+                            data-en="Learn More →" data-zh="了解更多 →">Learn More →</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrap">
+                    <img src="./Images/DOC.jpg" alt="Veterinary">
+                    <div class="service-img-overlay"></div>
+                </div>
+                <div class="service-body">
+                    <div class="service-icon">🩺</div>
+                    <h3 data-en="24/7 Veterinary Services" data-zh="全天候兽医服务">24/7 Veterinary Services</h3>
+                    <p class="service-desc"
+                       data-en="Certified veterinary staff available around the clock for your dog's health."
+                       data-zh="认证兽医团队全天候守护您的狗狗健康。">Certified veterinary staff available around the clock for your dog's health.</p>
+                    <button class="btn-learn-more" onclick="openModal('vet')"
+                            data-en="Learn More →" data-zh="了解更多 →">Learn More →</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-wrap">
+                    <img src="./Images/PLAY.jpg" alt="Play & Monitoring">
+                    <div class="service-img-overlay"></div>
+                </div>
+                <div class="service-body">
+                    <div class="service-icon">🎾</div>
+                    <h3 data-en="Play &amp; Monitoring" data-zh="玩耍与监护">Play &amp; Monitoring</h3>
+                    <p class="service-desc"
+                       data-en="Forest walks, private grass areas, indoor playground and 24/7 monitoring."
+                       data-zh="森林散步、私人草坪、室内游乐场和全天候监护。">Forest walks, private grass areas, indoor playground and 24/7 monitoring.</p>
+                    <button class="btn-learn-more" onclick="openModal('play')"
+                            data-en="Learn More →" data-zh="了解更多 →">Learn More →</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-icon" id="modalIcon"></div>
+            <h3 id="modalTitle"></h3>
+            <div class="modal-price" id="modalPrice"></div>
+            <ul class="modal-features" id="modalFeatures"></ul>
+            <p class="modal-note" id="modalNote"></p>
+            <a href="contact.html" class="modal-cta" id="modalCta">Book Now 🐾</a>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta-strip">
+        <div class="cta-content">
+            <h2 data-en="Ready to book a service?" data-zh="准备好预订服务了吗？">Ready to book a service?</h2>
+            <p data-en="Get in touch and we'll take care of everything." data-zh="联系我们，我们会为您处理一切。">Get in touch and we'll take care of everything.</p>
+            <a href="contact.html" class="btn-primary" data-en="Contact Us" data-zh="联系我们">Contact Us</a>
+        </div>
+        <div class="cta-paw">🐾</div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p data-en="© 2026 Loving Homes — All Rights Reserved" data-zh="© 2026 温馨之家 — 版权所有">© 2026 Loving Homes — All Rights Reserved</p>
+        <p class="footer-sub" data-en="Made with ❤️ for dogs everywhere" data-zh="用 ❤️ 为世界各地的狗狗而制作">Made with ❤️ for dogs everywhere</p>
+    </footer>
+
+    <script src="./javascript/translate.js"></script>
+    <script src="./javascript/services.js"></script>
+</body>
+</html>
