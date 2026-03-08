@@ -14,15 +14,15 @@
     <header class="navbar" id="navbar">
         <div class="nav-logo"><img src="./Images/LOGO.png" alt="Loving Homes Logo"></div>
         <nav class="nav-links" id="navLinks">
-            <a href="index.html">HOME</a>
-            <a href="services.html">Services</a>
-            <a href="packages.html">Packages</a>
-            <a href="ai.html">AI</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="./index.html">HOME</a>
+            <a href="./services.html">Services</a>
+            <a href="./packages.html">Packages</a>
+            <a href="./ai.html">AI</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
         </nav>
-        <a href="settings.html" class="menu-btn active-settings" aria-label="Settings">
+        <a href="./settings.html" class="menu-btn active-settings" aria-label="Settings">
             <img src="./Images/menu.png" alt="Menu">
         </a>
     </header>
@@ -35,6 +35,24 @@
 
     <section class="settings-section">
 
+        <!-- ========== NAVIGATION CARD ========== -->
+        <div class="settings-card">
+            <div class="card-header">
+                <span class="card-icon">🧭</span>
+                <h2>Quick Navigation</h2>
+            </div>
+            <div class="nav-grid">
+                <a href="./index.html"    class="nav-tile">🏠<span>Home</span></a>
+                <a href="./services.html" class="nav-tile">✂️<span>Services</span></a>
+                <a href="./packages.html" class="nav-tile">📦<span>Packages</span></a>
+                <a href="./ai.html"       class="nav-tile">🤖<span>AI</span></a>
+                <a href="./blog.html"     class="nav-tile">📝<span>Blog</span></a>
+                <a href="./about.html"    class="nav-tile">🐾<span>About Us</span></a>
+                <a href="./contact.html"  class="nav-tile">📞<span>Contact</span></a>
+            </div>
+        </div>
+
+        <!-- PROFILE CARD -->
         <div class="settings-card">
             <div class="card-header">
                 <span class="card-icon">👤</span>
@@ -68,6 +86,7 @@
             </div>
         </div>
 
+        <!-- PREFERENCES CARD -->
         <div class="settings-card">
             <div class="card-header">
                 <span class="card-icon">🔔</span>
@@ -79,40 +98,28 @@
                         <span class="pref-label">Email Notifications</span>
                         <span class="pref-desc">Receive updates about your bookings</span>
                     </div>
-                    <label class="toggle">
-                        <input type="checkbox" id="emailNotif" checked>
-                        <span class="toggle-slider"></span>
-                    </label>
+                    <label class="toggle"><input type="checkbox" id="emailNotif" checked><span class="toggle-slider"></span></label>
                 </div>
                 <div class="pref-item">
                     <div class="pref-info">
                         <span class="pref-label">Daily Photo Updates</span>
                         <span class="pref-desc">Get photos of your dog during their stay</span>
                     </div>
-                    <label class="toggle">
-                        <input type="checkbox" id="photoNotif" checked>
-                        <span class="toggle-slider"></span>
-                    </label>
+                    <label class="toggle"><input type="checkbox" id="photoNotif" checked><span class="toggle-slider"></span></label>
                 </div>
                 <div class="pref-item">
                     <div class="pref-info">
                         <span class="pref-label">Promotional Offers</span>
                         <span class="pref-desc">Receive special deals and discounts</span>
                     </div>
-                    <label class="toggle">
-                        <input type="checkbox" id="promoNotif">
-                        <span class="toggle-slider"></span>
-                    </label>
+                    <label class="toggle"><input type="checkbox" id="promoNotif"><span class="toggle-slider"></span></label>
                 </div>
                 <div class="pref-item">
                     <div class="pref-info">
                         <span class="pref-label">🌙 Dark Mode</span>
                         <span class="pref-desc">Switch to a darker look across all pages</span>
                     </div>
-                    <label class="toggle">
-                        <input type="checkbox" id="darkModeToggle">
-                        <span class="toggle-slider"></span>
-                    </label>
+                    <label class="toggle"><input type="checkbox" id="darkModeToggle"><span class="toggle-slider"></span></label>
                 </div>
                 <div class="pref-item">
                     <div class="pref-info">
